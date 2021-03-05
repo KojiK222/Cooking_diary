@@ -8,32 +8,34 @@
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
-        <%= f.label :username %><br />
-        <%= f.text_field :username, autofocus: true, autocomplete: "email" %>
+        <%= f.label :username ,"ユーザーネーム" ,class:"fieldname"%><br />
+        <%= f.text_field :username, autofocus: true, autocomplete: "email" ,class:"registration_field"%>
       </div>
 
       <div class="field">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.label :email ,"メールアドレス" ,class:"fieldname"%><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class:"registration_field"%>
       </div>
 
       <div class="field">
-        <%= f.label :password %>
+        <%= f.label :password ,"パスワード" ,class:"fieldname"%>
         <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
+        <%= f.password_field :password, autocomplete: "new-password" ,class:"registration_field"%>
       </div>
 
       <div class="field">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        <%= f.label :password_confirmation ,"パスワードの確認" ,class:"fieldname"%><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" ,class:"registration_field"%>
       </div>
 
       <div class="actions">
-        <%= f.submit "Sign up" %>
+        <%= f.submit "会員登録" ,class:"registration_btn"%>
       </div>
-      <%= render "devise/shared/links" %>
+
+      <div class="to_login">
+      <a href="#">ログイン</a>
+      </div>
     <% end %>
   </div>
 </div>

@@ -1,6 +1,6 @@
 
 .field {
-  color: aqua;
+  color: #222222;
   margin-left: 10px;
 }
 
@@ -24,11 +24,33 @@
   padding-top: 100px;
 }
 
+.fieldname {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.registration_field {
+  width: 220px;
+  margin-bottom: 10px;
+}
+
 .registration_form {
-  width: 300px;
+  width: 250px;
+  height: 350px;
+  padding: 10px;
   border: 1px solid #c0c0c0;
   border-radius: 4px;
   margin-left: auto;
   margin-right: 100px;
   background-color: #fff;
+}
+
+.actions {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.registration_btn {
+  width: 100px;
 }
