@@ -7,17 +7,20 @@
 .registration_header {
   display: flex;
   height: 60px;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 .registration_title {
   color: #FF773E;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .registration_body {
   width: 1424px;
-  height: 600px;
+  height: 745px;
   background-image: url(187a2a4f087924af0c08ea1ef5bf5d02.jpg);
   background-size: cover;
   padding-top: 100px;
@@ -29,12 +32,12 @@
 }
 
 .registration_field {
-  width: 220px;
+  width: 260px;
   margin-bottom: 10px;
 }
 
 .registration_form {
-  width: 250px;
+  width: 300px;
   height: 350px;
   padding: 10px;
   border: 1px solid #c0c0c0;
@@ -52,4 +55,22 @@
 
 .registration_btn {
   width: 100px;
+  background-color: #FF773E;
+  border: solid 1px #FF773E;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.to_login {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+a {
+  color: #777777;
+}
+
+a:hover {
+  color: #777777;
+  text-decoration:underline;
 }
