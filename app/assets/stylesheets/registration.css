@@ -5,15 +5,14 @@
 }
 
 .registration_header {
-  height: 46px;
+  display: flex;
+  height: 60px;
 }
 
 .registration_title {
   color: #FF773E;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 30px;
-  margin-top: 10px;
 }
 
 .registration_body {
