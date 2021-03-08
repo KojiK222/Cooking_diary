@@ -4,10 +4,22 @@
   height: 745px;
   background-image: url(ebf791189279de1a70326b01eb5e2887.jpg);
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 150px;
+}
+
+.sessions_form {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: 100px;
+  background-color: #fff;
 }
 
 .sessions {
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 100px;
