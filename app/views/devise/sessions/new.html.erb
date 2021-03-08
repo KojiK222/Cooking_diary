@@ -7,13 +7,13 @@
   <div class="registration_form">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.label :email ,"メールアドレス" ,class:"fieldname"%><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class:"registration_field"%>
       </div>
 
       <div class="field">
-        <%= f.label :password %><br />
-        <%= f.password_field :password, autocomplete: "current-password" %>
+        <%= f.label :password ,"パスワード" ,class:"fieldname"%><br />
+        <%= f.password_field :password, autocomplete: "current-password" ,class:"registration_field"%>
       </div>
 
       <% if devise_mapping.rememberable? %>
@@ -23,8 +23,8 @@
         </div>
       <% end %>
 
-      <div class="actions">
-        <%= f.submit "Log in" %>
+      <div class="sessions">
+        <%= f.submit "ログイン" ,class:"essions_btn"%>
       </div>
     <% end %>
   </div>

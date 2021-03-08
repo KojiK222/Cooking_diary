@@ -6,3 +6,17 @@
   background-size: cover;
   padding-top: 100px;
 }
+
+.sessions {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.sessions_btn {
+  width: 100px;
+  background-color: #FF773E;
+  border: solid 1px #FF773E;
+  border-radius: 4px;
+  font-weight: bold;
+}
