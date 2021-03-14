@@ -4,6 +4,11 @@
       <%= link_to root_path, class: "nav_link" do%>
         <div class="registration_title">Cooking diary</div>
       <% end %>
+    <div class="logout">
+      <%= link_to destroy_user_session_path, method: :delete do%>
+        <div class="logout_btn">ログアウト</div>
+      <% end %>
+    </div>
   </div>
 </header>
 
