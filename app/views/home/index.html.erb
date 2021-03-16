@@ -4,15 +4,18 @@
       <%= link_to root_path, class: "nav_link" do%>
         <div class="registration_title">Cooking diary</div>
       <% end %>
-    <div class="logout">
-      <%= link_to destroy_user_session_path, method: :delete do%>
-        <div class="logout_btn">ログアウト</div>
-      <% end %>
-      <%= link_to new_user_session_path do%>
-        <div class="logout_btn">ログイン</div>
-      <% end %>
-      <%= link_to new_user_registration_path do%>
-        <div class="logout_btn">新規会員登録</div>
+    <div class="nav_btn">
+      <% if user_signed_in? %>
+        <%= link_to destroy_user_session_path, method: :delete do%>
+          <div class="logout_btn">ログアウト</div>
+        <% end %>
+      <% else %>
+        <%= link_to new_user_session_path do%>
+          <div class="logout_btn">ログイン</div>
+        <% end %>
+        <%= link_to new_user_registration_path do%>
+          <div class="logout_btn">新規会員登録</div>
+        <% end %>
       <% end %>
     </div>
   </div>
